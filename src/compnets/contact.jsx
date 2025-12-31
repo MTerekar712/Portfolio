@@ -27,36 +27,82 @@
 
 // export default contact
 
-import React from 'react'
-import "../pagesCss/contact.css"
-import mail from '../assets/mail.webp'
-import linkdin from '../assets/linkdin.webp'
-import whatsapp from '../assets/whatapp.webp'
-import github from '../assets/github.webp'
-import leetcode from '../assets/leetcode.webp'
+import React from 'react';
+import "../pagesCss/contact.css";
+import mail from '../assets/mail.webp';
+import linkedin from '../assets/linkedin.webp';
+import whatsapp from '../assets/whatsapp.webp';
+import github from '../assets/github.webp';
+import leetcode from '../assets/leetcode.webp';
 
 const Contact = () => {
   return (
     <div className='box'>
-        <div className="links">
-            <div><img src={mail} alt="Mail" /><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mayurterekar712@gmail.com" target="_blank">Mail </a></div>
-            <div><img src={linkdin} alt="LinkedIn" /><a href="https://www.linkedin.com/in/mayurterekar2306" target="_blank">LinkedIn</a></div>
-            <div><img src={whatsapp} alt="WhatsApp" /><a href="https://wa.me/7304752306" target="_blank">WhatsApp</a></div>
-            <div><img src={github} alt="GitHub" /><a href="https://github.com/MTerekar712" target="_blank">GitHub</a></div>
-            <div><img src={leetcode} alt="LeetCode" /><a href="https://leetcode.com/mayurTerekar712" target='_blank'>LeetCode</a></div>
+      <div className="links">
+        <div>
+          <img src={mail} alt="Mail" />
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mayurterekar712@gmail.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Mail
+          </a>
         </div>
-        <div className="messg">
-          <form>
-            <h1>Contact Me!..</h1>
-            <input type="text" placeholder='Enter Your Name' />
-            <input type="email" placeholder='Enter your Email ' />
-            <input type="tel" placeholder='Enter Mobile Number' />
-            <textarea placeholder='Write Message'></textarea>
-            <button>Submit</button>
-          </form>
+        <div>
+          <img src={linkedin} alt="LinkedIn" />
+          <a 
+            href="https://www.linkedin.com/in/mayurterekar2306" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </div>
+        <div>
+          <img src={whatsapp} alt="WhatsApp" />
+          <a 
+            href="https://wa.me/7304752306" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
+        </div>
+        <div>
+          <img src={github} alt="GitHub" />
+          <a 
+            href="https://github.com/MTerekar712" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+        <div>
+          <img src={leetcode} alt="LeetCode" />
+          <a 
+            href="https://leetcode.com/mayurTerekar712" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            LeetCode
+          </a>
+        </div>
+      </div>
+
+      <div className="messg">
+        <form>
+          <h1>Contact Me!</h1>
+          <input type="text" placeholder='Enter Your Name' required />
+          <input type="email" placeholder='Enter Your Email' required />
+          <input type="tel" placeholder='Enter Mobile Number' required />
+          <textarea placeholder='Write Message' required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
