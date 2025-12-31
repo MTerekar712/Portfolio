@@ -33,7 +33,7 @@ import Skill from "./compnets/Skill";
 import Project from "./compnets/Project";
 import Contact from "./compnets/Contact";
 
-const App = () => {
+function App() {
   return (
     <BrowserRouter>
       <Navbar />
@@ -47,6 +47,6 @@ const App = () => {
       </Routes>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
