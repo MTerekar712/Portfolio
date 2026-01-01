@@ -1,12 +1,13 @@
 import React from "react";
 import "../pagesCss/card.css";
 // import photo1 from "../assets/PHOTO(2).webp";
+import photo from "../assets/PHOTO (2).webp";
 
 const card = () => {
   return (
     <div className="card">
       <div className="photo1">
-        <div className="photo" ></div>
+        <div className="photo" style={{ backgroundImage: `url(${photo})` }} ></div>
       </div>
       <div className="info">
         {/* <h4>Hello!..</h4> */}
