@@ -1,28 +1,3 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-// import "../pagesCss/nav.css"
-
-// const navbar = () => {
-
-//   return (
-    
-//     <div className='nav'>
-//         <div className="box1">
-//             <h1>Welcom to My Portfolio</h1>
-//         </div>
-//         <div className="box2">
-//             <Link to={"/"}>Home</Link>
-//             <Link to={"/about"}>About</Link>
-//             <Link to={"/skills"}> Skills</Link>
-//             <Link to={"/project"}>Project</Link>
-//             <Link to={"/contact"}>Contact</Link>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default navbar
-
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
