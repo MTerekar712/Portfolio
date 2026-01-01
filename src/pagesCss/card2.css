@@ -81,7 +81,7 @@ h4{
 
 /* IMAGE SECTION */
 .picture {
-  background-image: url("src/assets/PHOTO (2).webp");
+  /* background-image: url("src/assets/PHOTO (2).webp"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

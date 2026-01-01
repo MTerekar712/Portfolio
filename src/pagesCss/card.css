@@ -36,12 +36,12 @@
   /* background-image: url("src\assets\PHOTO \(2\).webp"); */
   /* background-image: url("/images/PHOTO-2.webp"); */
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
   /* display: flsex; */
   /* flex-direction: column; */
   border-radius: 10%;
-  width: 100%;
+  width: 100%;;
   margin-right: 100px;
   max-width: 280px;
   aspect-ratio: 1/1;
