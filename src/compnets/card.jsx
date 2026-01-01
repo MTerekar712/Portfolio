@@ -45,7 +45,7 @@ const Card = () => {
         <div className="mayu">
           <h1>I'm Mayur Terekar</h1>
           <h2>
-            Web Developer <br />
+            - Web Developer <br />
             <span className="soft">Software Developer</span>
           </h2>
         </div>
