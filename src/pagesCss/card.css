@@ -33,7 +33,8 @@
 
 /* IMAGE SECTION */
 .photo {
-  background-image: url("src\assets\PHOTO \(2\).webp");
+  /* background-image: url("src\assets\PHOTO \(2\).webp"); */
+  background-image: url("/images/PHOTO-2.webp");
   background-size: cover;
   /* background-position: center; */
   background-repeat: no-repeat;
