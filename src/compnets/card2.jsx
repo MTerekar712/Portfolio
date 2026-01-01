@@ -6,7 +6,7 @@ const card2 = () => {
   return (
     <div>
         <div className='card2'>
-            <div className="picture" style={{backgroundImage: `url(${photo})`, height: "100%", width: "100%"}}></div>
+            <div className="picture" style={{backgroundImage: `url(${photo})`}}></div>
             <div className="me">
               <h1>About me!..</h1>
               <h2>I am a passionate Web Developer with strong problem-solving skills.</h2>
