@@ -45,75 +45,111 @@
 
 
 
+/* ================= SKILLS SECTION ================= */
 .skills {
   width: 100%;
   min-height: 70vh;
+
   display: flex;
   gap: 20px;
   padding: 20px;
   flex-wrap: wrap;
   justify-content: center;
+
+  /* subtle depth */
+  position: relative;
 }
 
-/* INDIVIDUAL SKILL CARD */
+/* ================= SKILL CARD ================= */
 .skill {
   flex: 1 1 300px;
   max-width: 450px;
   min-height: 350px;
-  background-color: rgba(55, 234, 195, 0.128);
-  border-radius: 15px;
+
+  /* 🧊 Glassmorphism */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.22),
+    rgba(255, 255, 255, 0.08)
+  );
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 20px;
   padding: 20px;
-  transition: 0.3s ease;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.35),
+    inset 0 0 18px rgba(255, 255, 255, 0.15);
+
+  transition: all 0.35s ease;
 }
 
+/* 🔥 Hover Glow */
 .skill:hover {
-  box-shadow: 0px 10px 25px rgb(6, 217, 240);
-  transform: scale(1.03);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow:
+    0 30px 65px rgba(15, 185, 177, 0.45),
+    inset 0 0 25px rgba(255, 255, 255, 0.25);
 }
 
-/* TITLE */
+/* ================= TITLE ================= */
 .techskill {
   text-align: center;
   font-size: clamp(28px, 4vw, 60px);
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.9);
+  color: #e9fdff;
   margin-bottom: 15px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
 }
 
-/* SUB TITLE */
+/* ================= SUB TITLE ================= */
 .skill h1 {
   text-align: center;
   font-size: clamp(20px, 3vw, 28px);
   margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* LOGO GRID */
+/* ================= LOGO GRID ================= */
 .logos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 20px;
+  gap: 22px;
   justify-items: center;
 }
 
-/* LOGO IMAGE */
+/* ================= LOGO IMAGE ================= */
 .logo img {
   width: 80px;
   height: 80px;
   object-fit: contain;
-  border-radius: 15px;
-  transition: 0.3s ease;
+
+  border-radius: 16px;
+  padding: 10px;
+
+  /* glass tile */
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.35s ease;
 }
 
 .logo:hover img {
-  box-shadow: 0px 10px 35px rgb(6, 217, 240);
-  transform: scale(1.08);
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 20px 45px rgba(15, 185, 177, 0.5);
 }
+
+/* ================= SCROLLBAR ================= */
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* ---------- RESPONSIVE FIX ---------- */
-
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .skills {
     flex-direction: column;

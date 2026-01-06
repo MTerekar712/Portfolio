@@ -1,34 +1,67 @@
+/* ================= CARD 2 ================= */
 .card2 {
   width: 90%;
   max-width: 1100px;
   min-height: 80vh;
   margin: auto;
-  background: linear-gradient(175deg, #dac09b, #dac09bc9, #dac09bc4);
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   padding: 20px;
-  border-radius: 20px;
-  box-sizing: border-box;
+
+  /* 🌟 Glassmorphism background */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.22),
+    rgba(255, 255, 255, 0.08)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35),
+    inset 0 0 20px rgba(255, 255, 255, 0.15);
+
+  transition: all 0.35s ease;
 }
 
-/* IMAGE SECTION */
+/* 🔥 Hover glow */
+.card2:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 35px 80px rgba(15, 185, 177, 0.4),
+    inset 0 0 30px rgba(255, 255, 255, 0.25);
+}
+
+/* ================= IMAGE ================= */
 .picture {
   width: 75%;
   height: 100%;
   min-height: 280px;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 25px;
-  transition: 0.3s ease;
+
+  border-radius: 28px;
+
+  /* depth + glass edge */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+
+  transition: all 0.35s ease;
 }
 
 .picture:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 30px 60px rgba(15, 185, 177, 0.45);
 }
 
-/* TEXT SECTION */
+/* ================= TEXT ================= */
 .me {
   display: flex;
   flex-direction: column;
@@ -39,26 +72,27 @@
 
 .me h1 {
   font-size: clamp(28px, 5vw, 60px);
-  color: rgba(255, 255, 255, 0.9);
+  color: #e9fdff;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
 .me h2 {
   font-size: clamp(18px, 3vw, 26px);
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 h3 {
   font-size: clamp(20px, 3vw, 28px);
-  color: white;
+  color: #bffcff;
 }
 
 h4 {
   font-size: clamp(16px, 2.5vw, 20px);
-  color: black;
+  color: rgba(255, 255, 255, 0.75);
   white-space: normal;
 }
 
-/* FLEX ROWS */
+/* ================= ROWS ================= */
 .edu,
 .exp {
   display: flex;
@@ -69,8 +103,6 @@ h4 {
 /* ================= MOBILE ================= */
 @media (max-width: 900px) {
   .card2 {
-    /* grid-template-columns: 1fr;
-    text-align: center; */
     display: flex;
     flex-direction: column;
   }
@@ -81,11 +113,11 @@ h4 {
   }
 
   .me {
-    align-items: start;
+    align-items: flex-start;
   }
 }
 
-/* SMALL MOBILE */
+/* ================= SMALL MOBILE ================= */
 @media (max-width: 480px) {
   .card2 {
     padding: 15px;
